@@ -173,6 +173,18 @@ export function AboutPanel() {
                 </div>
               ))}
             </dl>
+
+            <div className="mt-10">
+              <a 
+                href="https://drive.google.com/file/d/1zsXILHGPp5PlPxJuCazQmsmz07kTdzux/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button className="rounded-full font-display text-xs font-semibold uppercase tracking-widest px-8">
+                  View Resume
+                </Button>
+              </a>
+            </div>
           </div>
         )}
       </div>

@@ -232,20 +232,30 @@ export function ProjectGrid() {
           </motion.div>
           <AnimatePresence>
             {!isAboutOpen && (
-              <motion.div 
-                className="absolute -bottom-10 left-0 text-left"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                <button 
-                  onClick={() => setIsAboutOpen(true)}
-                  className="cursor-none font-sans text-[20px] font-bold uppercase tracking-widest text-foreground underline decoration-2 underline-offset-4 hover:opacity-70 transition-opacity"
-                  data-cursor="About"
+              <>
+                <motion.div 
+                  className="absolute -bottom-20 md:-bottom-16 left-0 text-left"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
                 >
-                  Mantra Khandelwal
-                </button>
-              </motion.div>
+                  <button 
+                    onClick={() => setIsAboutOpen(true)}
+                    className="cursor-none font-sans text-[20px] font-bold uppercase tracking-widest text-foreground underline decoration-2 underline-offset-4 hover:opacity-70 transition-opacity"
+                    data-cursor="About"
+                  >
+                    Mantra Khandelwal
+                  </button>
+                </motion.div>
+                <motion.div 
+                  className="absolute -bottom-24 md:-bottom-20 right-0 text-right w-[70%] md:w-auto md:max-w-xs text-[10px] md:text-xs font-sans text-foreground/40 leading-tight"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  Disclaimer: It's a work in progress and some boxes still don't have content. The green, red and black work perfectly well and others have demo content.
+                </motion.div>
+              </>
             )}
           </AnimatePresence>
           <AnimatePresence>
@@ -290,10 +300,13 @@ export function ProjectGrid() {
                     When I’m not coding or designing, you’ll probably find me binge-watching a series, playing video games, playing table tennis, or singing.
                   </p>
                 </div>
-                <div className="mt-12 flex gap-8">
-                  <a href="mailto:mantrakhandelwaljee@gmail.com" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="Email">Email</a>
-                  <a href="https://www.linkedin.com/in/mantra-khandelwal-2bba863b6/" target="_blank" rel="noopener noreferrer" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="LinkedIn">LinkedIn</a>
-                  <a href="https://github.com/mantrakhandelwaljee-lgtm" target="_blank" rel="noopener noreferrer" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="GitHub">GitHub</a>
+                <div className="mt-12 flex flex-col items-center gap-8">
+                  <div className="flex gap-8">
+                    <a href="mailto:mantrakhandelwaljee@gmail.com" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="Email">Email</a>
+                    <a href="https://www.linkedin.com/in/mantra-khandelwal-2bba863b6/" target="_blank" rel="noopener noreferrer" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/mantrakhandelwaljee-lgtm" target="_blank" rel="noopener noreferrer" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="GitHub">GitHub</a>
+                  </div>
+                  <a href="https://drive.google.com/file/d/1zsXILHGPp5PlPxJuCazQmsmz07kTdzux/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cursor-none px-8 py-3 bg-[#EA580C] text-white font-sans text-lg md:text-xl font-medium tracking-wide hover:opacity-90 transition-opacity rounded-sm shadow-sm" data-cursor="Resume">Resume</a>
                 </div>
               </motion.div>
             )}
