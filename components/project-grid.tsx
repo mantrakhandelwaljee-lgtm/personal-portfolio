@@ -299,10 +299,13 @@ export function ProjectGrid() {
                   <p>
                     When I’m not coding or designing, you’ll probably find me binge-watching a series, playing video games, playing table tennis, or singing.
                   </p>
+                  <p>
+                    Mobile No - +91 9425389251<br />
+                    Email - mantrakhandelwaljee@gmail.com
+                  </p>
                 </div>
                 <div className="mt-12 flex flex-col items-center gap-8">
                   <div className="flex gap-8">
-                    <a href="mailto:mantrakhandelwaljee@gmail.com" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="Email">Email</a>
                     <a href="https://www.linkedin.com/in/mantra-khandelwal-2bba863b6/" target="_blank" rel="noopener noreferrer" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="LinkedIn">LinkedIn</a>
                     <a href="https://github.com/mantrakhandelwaljee-lgtm" target="_blank" rel="noopener noreferrer" className="cursor-none font-sans text-sm font-bold uppercase tracking-widest underline decoration-2 underline-offset-4 hover:opacity-70" data-cursor="GitHub">GitHub</a>
                   </div>
